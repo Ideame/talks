@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to user search engine</h1>
+    <form action="/search">
+        <input type="text" name="q" placeholder="Search for user..." />
+        <input type="submit" value="Search" />
+    </form>
+    <a href="/create">Create user</a>
+
+    <% if (users) { %>
+        <ul>
+        <% users.forEach(function(u) { %>
+            <li><%- u.username %><br/>Es: <%- u.minibioEs %><br/>En: <%- u.minibioEn %></li>
+        <% }) %>
+        </ul>
+    <% } %>
+  </body>
+</html>

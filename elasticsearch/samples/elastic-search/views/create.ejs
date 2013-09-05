@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Create a user</h1>
+    <form action="/create" method="POST">
+        <p>
+            <label>Username: <input type="text" name="user[username]" /></label>
+        <p>
+        <p>
+            <textarea name="user[minibioEs]" placeholder="Escribe tu minibio aquí" cols="50" rows="10"></textarea>
+        </p>
+        <p>
+            <textarea name="user[minibioEn]" placeholder="Type your minibio here" cols="50" rows="10"></textarea>
+        </p>
+        <input type="submit" value="Save" />
+    </form>
+  </body>
+</html>
